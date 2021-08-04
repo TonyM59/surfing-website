@@ -3,9 +3,9 @@ const banner = document.querySelector('.banner');
 const content = document.createElement('div');
 content.classList.add ('navbar');
 
-const nav_bar = document.createElement('div')
+/*const nav_bar = document.createElement('div')
 const newpage = document.createElement('a')
-newpage.href = "contact.html"
+newpage.href = "contact.html"*/
 const menuBar = document.createElement('ul');
 const home = document.createElement('li');
 const contact = document.createElement('li');
