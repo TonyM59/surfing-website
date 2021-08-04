@@ -8,6 +8,7 @@ const aboutUs = document.createElement('li');
 const product = document.createElement('li');
 const contact = document.createElement('li');
 
+
    //   background image
 const mainContent  = document.createElement('div');
 mainContent.classList.add('maincontent');
@@ -15,15 +16,15 @@ const section = document.createElement('section');
 section.classList.add('background')
 const h1 = document.createElement('h1');
 
-     // adding the pictures
+     /*adding the pictures*/
 const contentWrapper = document.createElement('div');
 contentWrapper.classList.add('contentwrapper');
-const leftSection = document.createElement('div');
-leftSection.classList.add('leftSection');
-const rightSection = document.createElement('div');
-rightSection.classList.add('rightSection');
-const middleSection = document.createElement('div');
-middleSection.classList.add('middleSection');
+const firstpic = document.createElement('div');
+firstpic.classList.add('leftSection');
+const secondpic = document.createElement('div');
+secondpic.classList.add('rightSection');
+const thirdpic = document.createElement('div');
+thirdpic.classList.add('middleSection');
 
 //adding footer
 const footer = document.createElement('footer');
@@ -61,6 +62,12 @@ contact.textContent = 'Contact';
 
 h1.textContent = 'SURFING MASTERS'
 
+/*const newPage= document.createElement('a')
+newPage.href = "contact.html"
+
+menuBar.appendChild(newPage)*/
+
+
 copyright.textContent = 'Copyright ©️ 2021 Master Surfing.All Rights Reversed'
 
    // append navbar to the parent banner
@@ -76,11 +83,12 @@ mainContent.appendChild(section);
 section.appendChild(h1)
 banner.appendChild(mainContent);
 
-// append the three pictures
-contentWrapper.appendChild(rightSection);
-contentWrapper.appendChild(leftSection);
-contentWrapper.appendChild(middleSection)
+//append the three pictures
+contentWrapper.appendChild(secondpic);
+contentWrapper.appendChild(firstpic);
+contentWrapper.appendChild(thirdpic)
 mainContent.appendChild(contentWrapper);
+
 
 // append icons
 icons.appendChild(fbook);
