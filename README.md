@@ -1,8 +1,7 @@
 # surfing-website
 This is a sample repo of creative website for surfers, it was designed mainly with the purpose of demonstrating the Authors' understanding of JavaScript fundamentals, that entails Modules, ES6 concepts and DOM Manipulation to manipulate HTML elements in JavaScript.
 
-![project image](/images/pic2.jpeg)
-![project image2](/images/pic.jpeg)
+![project image](https://images03.nicepage.com/c461c07a441a5d220e8feb1a/b32c7cc7c7a35a4db6d2bc5c/697min.jpg)
 
 
 ## Developed with
