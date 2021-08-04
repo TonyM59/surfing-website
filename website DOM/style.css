@@ -46,7 +46,8 @@ li:hover {
     margin-top: -50px;
     text-align: center;
     font-size:40PX;
-    font-family: 'Fredericka the Great', cursive
+    font-weight: 100;
+    font-family:papyrus;
     
 }
 
@@ -56,6 +57,9 @@ li:hover {
     padding-top: 20px;
 }
 
+/*.contentWrapper{
+    background-image: url('front.png');
+}
 */
 .contentwrapper:after{
     content: "";
@@ -101,6 +105,18 @@ li:hover {
     height: 300px;
     /*margin-left: 1000px;*/
     width: 300px;
+}
+
+.para{
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 50px;
+    font-family: cursive;
+}
+
+.para:hover{
+    background: #47a5c1;
+   /* background: rgb(0, 84, 105);*/
 }
   
 
