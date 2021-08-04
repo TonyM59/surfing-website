@@ -4,8 +4,8 @@ const content = document.createElement('div');
 content.classList.add ('navbar');
 const menuBar = document.createElement('ul');
 const home = document.createElement('li');
-const aboutUs = document.createElement('li');
-const product = document.createElement('li');
+//const aboutUs = document.createElement('li');
+//const product = document.createElement('li');
 const contact = document.createElement('li');
 
 
@@ -66,8 +66,8 @@ const copyright = document.createElement('p');
 
 
 home.textContent = 'Home';
-aboutUs.textContent = 'About us';
-product.textContent = 'Product';
+//aboutUs.textContent = 'About us';
+//product.textContent = 'Product';
 contact.textContent = 'Contact';
 
 h1.textContent = 'SURFING MASTERS'
@@ -77,8 +77,8 @@ copyright.textContent = 'Copyright ©️ 2021 Master Surfing.All Rights Reversed
 
    // append navbar to the parent banner
 menuBar.appendChild(home);
-menuBar.appendChild(aboutUs);
-menuBar.appendChild(product);
+//menuBar.appendChild(aboutUs);
+//menuBar.appendChild(product);
 menuBar.appendChild(contact);
 content.appendChild(menuBar);
 banner.appendChild(content);
