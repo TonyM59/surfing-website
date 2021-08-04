@@ -2,10 +2,12 @@ export const Header = (() =>{
 const banner = document.querySelector('.banner');
 const content = document.createElement('div');
 content.classList.add ('navbar');
+
+const nav_bar = document.createElement('div')
+const newpage = document.createElement('a')
+newpage.href = "contact.html"
 const menuBar = document.createElement('ul');
 const home = document.createElement('li');
-//const aboutUs = document.createElement('li');
-//const product = document.createElement('li');
 const contact = document.createElement('li');
 
 
@@ -22,6 +24,7 @@ contentWrapper.classList.add('contentwrapper');
 
 const firstpic = document.createElement('div');
 firstpic.classList.add('column');
+//firstpic.textContent = "Surf Lessons"
 const img1 = document.createElement('div');
 img1.classList.add('leftSection');
 
@@ -66,8 +69,6 @@ const copyright = document.createElement('p');
 
 
 home.textContent = 'Home';
-//aboutUs.textContent = 'About us';
-//product.textContent = 'Product';
 contact.textContent = 'Contact';
 
 h1.textContent = 'SURFING MASTERS'
@@ -77,10 +78,10 @@ copyright.textContent = 'Copyright ©️ 2021 Master Surfing.All Rights Reversed
 
    // append navbar to the parent banner
 menuBar.appendChild(home);
-//menuBar.appendChild(aboutUs);
-//menuBar.appendChild(product);
 menuBar.appendChild(contact);
 content.appendChild(menuBar);
+nav_bar.appendChild(newpage);
+//banner.appendChild(nav_bar)
 banner.appendChild(content);
 
   //append main content
