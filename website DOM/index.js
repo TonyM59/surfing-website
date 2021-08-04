@@ -24,17 +24,25 @@ contentWrapper.classList.add('contentwrapper');
 
 const firstpic = document.createElement('div');
 firstpic.classList.add('column');
-//firstpic.textContent = "Surf Lessons"
+const para1 = document.createElement('div');
+para1.classList.add('para');
+para1.textContent = "SURF LESSONS"
 const img1 = document.createElement('div');
 img1.classList.add('leftSection');
 
 const secondpic = document.createElement('div');
 secondpic.classList.add('column');
+const para2 = document.createElement('div');
+para2.classList.add('para');
+para2.textContent = "SURFING COURSES"
 const img2 = document.createElement('div');
 img2.classList.add('middleSection');
 
 const thirdpic = document.createElement('div');
 thirdpic.classList.add('column');
+const para3 = document.createElement('div');
+para3.classList.add('para');
+para3.textContent = "OUR SCHOOL"
 const img3 = document.createElement('div');
 img3.classList.add('rightSection');
 
@@ -74,7 +82,7 @@ contact.textContent = 'Contact';
 h1.textContent = 'SURFING MASTERS'
 
 
-copyright.textContent = 'Copyright ©️ 2021 Master Surfing.All Rights Reversed'
+copyright.textContent = 'Copyright ©️ 2021 Surfing Masters.All Rights Reversed'
 
    // append navbar to the parent banner
 menuBar.appendChild(home);
@@ -90,12 +98,15 @@ section.appendChild(h1)
 banner.appendChild(mainContent);
 
 //append the three pictures
-firstpic.appendChild(img1)
+firstpic.appendChild(img1);
+img1.appendChild(para1);
 contentWrapper.appendChild(firstpic);
 contentWrapper.appendChild(secondpic);
 secondpic.appendChild(img2);
+img2.appendChild(para2);
 contentWrapper.appendChild(thirdpic)
 thirdpic.appendChild(img3);
+img3.appendChild(para3)
 mainContent.appendChild(contentWrapper);
 
 

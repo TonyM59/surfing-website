@@ -23,6 +23,7 @@ export const Contact = (() =>{
     label1.textContent = 'Full Name:'
     const input1 = document.createElement('input1')
     input1.classList.add('input1')
+    
     //input.textContent = 'Enter Your Name'
     
     const txtb2 = document.createElement('div')
@@ -86,7 +87,7 @@ const copyright = document.createElement('p');
 home.textContent = 'Home';
 contact.textContent = 'Contact';
 
-copyright.textContent = 'Copyright ©️ 2021 Master Surfing.All Rights Reversed'
+copyright.textContent = 'Copyright ©️ 2021 Surfing masters.All Rights Reversed'
 
    // append navbar to the parent banner
 menuBar.appendChild(home);
