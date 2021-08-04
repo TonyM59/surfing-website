@@ -8,6 +8,7 @@ const aboutUs = document.createElement('li');
 const product = document.createElement('li');
 const contact = document.createElement('li');
 
+
    //   background image
 const mainContent  = document.createElement('div');
 mainContent.classList.add('maincontent');
@@ -15,15 +16,25 @@ const section = document.createElement('section');
 section.classList.add('background')
 const h1 = document.createElement('h1');
 
-     // adding the pictures
+     /*adding the pictures*/
 const contentWrapper = document.createElement('div');
 contentWrapper.classList.add('contentwrapper');
-const leftSection = document.createElement('div');
-leftSection.classList.add('leftSection');
-const rightSection = document.createElement('div');
-rightSection.classList.add('rightSection');
-const middleSection = document.createElement('div');
-middleSection.classList.add('middleSection');
+
+const firstpic = document.createElement('div');
+firstpic.classList.add('column');
+const img1 = document.createElement('div');
+img1.classList.add('leftSection');
+
+const secondpic = document.createElement('div');
+secondpic.classList.add('column');
+const img2 = document.createElement('div');
+img2.classList.add('middleSection');
+
+const thirdpic = document.createElement('div');
+thirdpic.classList.add('column');
+const img3 = document.createElement('div');
+img3.classList.add('rightSection');
+
 
 //adding footer
 const footer = document.createElement('footer');
@@ -61,6 +72,7 @@ contact.textContent = 'Contact';
 
 h1.textContent = 'SURFING MASTERS'
 
+
 copyright.textContent = 'Copyright ©️ 2021 Master Surfing.All Rights Reversed'
 
    // append navbar to the parent banner
@@ -76,11 +88,15 @@ mainContent.appendChild(section);
 section.appendChild(h1)
 banner.appendChild(mainContent);
 
-// append the three pictures
-contentWrapper.appendChild(rightSection);
-contentWrapper.appendChild(leftSection);
-contentWrapper.appendChild(middleSection)
+//append the three pictures
+firstpic.appendChild(img1)
+contentWrapper.appendChild(firstpic);
+contentWrapper.appendChild(secondpic);
+secondpic.appendChild(img2);
+contentWrapper.appendChild(thirdpic)
+thirdpic.appendChild(img3);
 mainContent.appendChild(contentWrapper);
+
 
 // append icons
 icons.appendChild(fbook);

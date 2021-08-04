@@ -50,44 +50,74 @@ li:hover {
     
 }
 
-.contentWrapper{
-   /* display: grid;
+.contentwrapper{
+   /*display: grid;
     grid-gap: 40px;
-    grid-template-columns:auto auto;
+    grid-template-columns: auto;
     padding: 30px;
-    text-align: center;*/
+    text-align: center;
     margin: 5px;
-    border: 1px solid #ccc;
+  /*  border: 1px solid black;
     float: left;
-    width: 180px;
+    width: 180px;*/
+    display: table;
+    padding-top: 20px;
 }
 
+/*.contentWrapper{
+    background-image: url('front.png');
+}
+*/
+.contentwrapper:after{
+    content: "";
+  display: table;
+  clear: both;
+}
+.column{
+    float:left;
+    width: 33.33%;
+    padding: 0px;
+    height: 300px;
+   
+   
+}
 .leftSection{
-
-    background: url('images/photo4.jpg') center center;
-    /*background-size: cover;*/
+    background-color: black;
+    background: url('images/photo4.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
-    margin: 0 3rem;
-    height: 200px;
+    margin: 0 20px 0 20px;
+    height: 400px;
+    width: 400px;
+    /*margin-top: 20px;*/
+    /*padding-top: 50px;*/
+    
+}
+
+
+.middleSection{
+    background: url('images/photo7.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 20px;
+    height: 400px;
+    width: 400px;
+   /* margin-left: 40%;
+    margin-right: 10%;*/
     
 }
 
 .rightSection{
-    background: url('images/photo3.jpg')center center;
-    /*background-size: cover;*/
+    background: url('images/photo3.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
-    margin: 0 3rem;
-    height: 200px;
+    margin: 0 20px 0 20px;
+    height: 400px;
+    /*margin-left: 1000px;*/
+    width: 400px;
+}
   
-}
-.middleSection{
-    background: url('images/photo7.jpg')center center;
-    /*background-size: cover;*/
-    background-repeat: no-repeat;
-    margin: 0 3rem;
-    height: 200px;
-    
-}
+
 
 .footer{
     background-color: #333333;
@@ -96,6 +126,8 @@ li:hover {
     position: relative;
     padding-top: 20px;
     padding-bottom: 15px;
+    position: relative;
+    bottom: -150px;
 }
 
 .icons{
