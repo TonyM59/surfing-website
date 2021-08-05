@@ -3,12 +3,14 @@ export const Contact = (() =>{
     const content = document.createElement('div');
     content.classList.add ('navbar');
     
-    //const newpage = document.createElement('a')
-    //newpage.href = "index.html"
     const menuBar = document.createElement('ul');
     const home = document.createElement('li');
+    const newpage = document.createElement('a')
+    newpage.classList.add('newpage')
+    newpage.href = "index.html"
+    newpage.textContent = 'Home';
     const contact = document.createElement('li');
-    
+    contact.textContent = 'Contact';
 
     //Creating a contact form
     const contactForm = document.createElement('div')
@@ -18,34 +20,28 @@ export const Contact = (() =>{
     h1.classList.add('h1')
     const txtb1 = document.createElement('div')
     txtb1.classList.add('txtb1')
-    const label1 = document.createElement('label1')
+    const label1 = document.createElement('label')
     label1.classList.add('label1')
     label1.textContent = 'Full Name:'
-    const input1 = document.createElement('input1')
-    input1.classList.add('input1')
-    
-    //input.textContent = 'Enter Your Name'
+    const input1 = document.createElement('input')
     
     const txtb2 = document.createElement('div')
     txtb2.classList.add('txtb2')
-    const label2 = document.createElement('label2')
+    const label2 = document.createElement('label')
     label2.classList.add('label2')
     label2.textContent = 'Email:'
-    const input2 = document.createElement('input2')
-    input2.classList.add('input2')
-    //input.textContent = 'Enter Your Email'
+    const input2 = document.createElement('input')
     
     const txtb3 = document.createElement('div')
     txtb3.classList.add('txtb3')
-    const label3 = document.createElement('label3')
+    const label3 = document.createElement('label')
     label3.classList.add('label3')
     label3.textContent = 'Phone Number:'
-    const input3 = document.createElement('input3')
-    //input.textContent = 'Enter Your Phone Number'
+    const input3 = document.createElement('input')
     
     const txtb4 = document.createElement('div')
     txtb4.classList.add('txtb4')
-    const label4 = document.createElement('label4')
+    const label4 = document.createElement('label')
     label4.classList.add('label4')
     label4.textContent = 'Message:'
     const textArea = document.createElement('textarea')
@@ -53,7 +49,6 @@ export const Contact = (() =>{
     const btn = document.createElement('a')
     btn.classList.add('btn')
     btn.textContent = 'Send'
-
 
     //adding footer
 const footer = document.createElement('footer');
@@ -78,21 +73,14 @@ const instagram= document.createElement('i');
 instagram.className = 'fa fa-instagram'
 instagramLink.href = "https://www.instagram.com/surfemporium/"
 
-
-
 // adding copyright
 const copyright = document.createElement('p');
-
-
-home.textContent = 'Home';
-contact.textContent = 'Contact';
-
 copyright.textContent = 'Copyright ©️ 2021 Surfing masters.All Rights Reversed'
 
-   // append navbar to the parent banner
+// append navbar to the parent banner
+home.appendChild(newpage)
 menuBar.appendChild(home);
 menuBar.appendChild(contact);
-//banner2.appendChild(newpage)
 content.appendChild(menuBar);
 
     //Append contact form
@@ -111,7 +99,7 @@ content.appendChild(menuBar);
     contactForm.appendChild(txtb4)
     contactForm.appendChild(btn)
     banner2.appendChild(contactForm)
-banner2.appendChild(content)
+    banner2.appendChild(content)
 
 // append icons
 icons.appendChild(fbook);
@@ -126,10 +114,6 @@ instagramLink.appendChild(instagram);
 footer.appendChild(icons);
 footer.appendChild(copyright);
 banner2.appendChild(footer)
-
-           
-
-
 
 
 return{banner2}

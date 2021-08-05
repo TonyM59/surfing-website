@@ -1,37 +1,33 @@
 .banner, .banner2{
     width: 100%;
     height: 100vh;
-    /*background-image: url('images/photo6.jpg') ;
-    background-size: cover;*/
     margin: auto;
     position: absolute;
     bottom: -20px;
-
 }
 
-ul {
+ul, .newpage {
 list-style: none;
 display:flex;
 justify-content: space-evenly;
 align-items: center;
 background-color: #0A84A9;
-padding: 50px;
+padding: 30px;
 color: white;
 font-size: 30px;
 overflow: hidden;
 transition: border-bottom 0.5s;
+text-decoration: none;
 }
 
-li:hover {
+li:hover, .newpage:hover {
     color:black;
-    text-decoration: underline;
+   text-decoration: underline;
 }
 
 .navbar{
     padding-bottom: 50px;
     padding-top: -90px;
-   /* background: url('images/logo.jpg');*/
-
 }
 
 .maincontent{
@@ -48,19 +44,13 @@ li:hover {
     font-size:40PX;
     font-weight: 100;
     font-family:papyrus;
-    
 }
 
 .contentwrapper{
-
     display: table;
     padding-top: 20px;
 }
 
-/*.contentWrapper{
-    background-image: url('front.png');
-}
-*/
 .contentwrapper:after{
     content: "";
   display: table;
@@ -70,9 +60,7 @@ li:hover {
     float:left;
     width: 33.33%;
     padding: 0px;
-    height: 300px;
-   
-   
+    height: 300px; 
 }
 .leftSection{
     background-color: black;
@@ -81,9 +69,7 @@ li:hover {
     background-repeat: no-repeat;
     margin: 10px 100px 0 100px;
     height: 300px;
-    width: 300px;
-
-    
+    width: 300px;    
 }
 
 
@@ -93,8 +79,7 @@ li:hover {
     background-repeat: no-repeat;
     margin: 10px 40px 0 80px;
     height: 300px;
-    width: 300px;
-    
+    width: 300px; 
 }
 
 .rightSection{
@@ -103,7 +88,6 @@ li:hover {
     background-repeat: no-repeat;
     margin: 10px 80px 0 70px;
     height: 300px;
-    /*margin-left: 1000px;*/
     width: 300px;
 }
 
@@ -116,11 +100,8 @@ li:hover {
 
 .para:hover{
     background: #47a5c1;
-   /* background: rgb(0, 84, 105);*/
 }
   
-
-
 .footer{
     background-color: #333333;
     color: whitesmoke;
@@ -163,7 +144,7 @@ li:hover {
     text-align: center;
     box-shadow: 0 0 20px #000000b3;
     font-family: monospace;
-    margin-top: 60px;
+    margin-top: 110px;
 }
 .h1{
     margin-top: 0;

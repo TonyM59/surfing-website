@@ -3,13 +3,14 @@ const banner = document.querySelector('.banner');
 const content = document.createElement('div');
 content.classList.add ('navbar');
 
-/*const nav_bar = document.createElement('div')
-const newpage = document.createElement('a')
-newpage.href = "contact.html"*/
 const menuBar = document.createElement('ul');
 const home = document.createElement('li');
+home.textContent = 'Home';
 const contact = document.createElement('li');
-
+const newpage = document.createElement('a')
+newpage.classList.add('newpage')
+newpage.href = "contact.html"
+newpage.textContent = 'Contact';
 
    //   background image
 const mainContent  = document.createElement('div');
@@ -17,6 +18,7 @@ mainContent.classList.add('maincontent');
 const section = document.createElement('section');
 section.classList.add('background')
 const h1 = document.createElement('h1');
+h1.textContent = 'SURFING MASTERS'
 
      /*adding the pictures*/
 const contentWrapper = document.createElement('div');
@@ -46,7 +48,6 @@ para3.textContent = "OUR SCHOOL"
 const img3 = document.createElement('div');
 img3.classList.add('rightSection');
 
-
 //adding footer
 const footer = document.createElement('footer');
 footer.classList.add('footer');
@@ -70,26 +71,15 @@ const instagram= document.createElement('i');
 instagram.className = 'fa fa-instagram'
 instagramLink.href = "https://www.instagram.com/surfemporium/"
 
-
-
 // adding copyright
 const copyright = document.createElement('p');
-
-
-home.textContent = 'Home';
-contact.textContent = 'Contact';
-
-h1.textContent = 'SURFING MASTERS'
-
-
 copyright.textContent = 'Copyright ©️ 2021 Surfing Masters.All Rights Reversed'
 
    // append navbar to the parent banner
 menuBar.appendChild(home);
+contact.appendChild(newpage)
 menuBar.appendChild(contact);
 content.appendChild(menuBar);
-nav_bar.appendChild(newpage);
-//banner.appendChild(nav_bar)
 banner.appendChild(content);
 
   //append main content
@@ -97,7 +87,7 @@ mainContent.appendChild(section);
 section.appendChild(h1)
 banner.appendChild(mainContent);
 
-//append the three pictures
+//append the pictures
 firstpic.appendChild(img1);
 img1.appendChild(para1);
 contentWrapper.appendChild(firstpic);
