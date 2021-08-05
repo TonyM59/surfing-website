@@ -10,6 +10,9 @@ This is a sample repo of creative website for surfers, it was designed mainly wi
 - CSS and
 - ES6
 
+## Live demo
+[Live demo](https://github.com/TonyM59/surfing-website)
+
 ## Authors
 - Kgaugelo Rabothata <br>
    <img align="left" alt="codeSTACKr | Github" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg" />: [@kgaugelo-rabothata](https://github.com/kgaugelo-rabothata) <br>
@@ -23,5 +26,8 @@ This is a sample repo of creative website for surfers, it was designed mainly wi
    No specific installation steps required.
    Simply pull the project and open index.html
 
-### Contributing
-Wanna feature in this project, collaboration requests are more than welcome!
+### :handshake: Contributing
+We are open to ideas and suggestions! If you want to contribute you are more than welcome to send a collaboration request!
+
+### Show your support!
+Give a :star: if you like this project!
