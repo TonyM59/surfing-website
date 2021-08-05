@@ -11,7 +11,7 @@ This is a sample repo of creative website for surfers, it was designed mainly wi
 - ES6
 
 ## Live demo
-[Live demo](https://github.com/TonyM59/surfing-website)
+[Live demo](http://127.0.0.1:5500/website%20DOM/index.html)
 
 ## Authors
 - Kgaugelo Rabothata <br>
