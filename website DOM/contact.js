@@ -12,8 +12,20 @@ export const Contact = (() =>{
     const contact = document.createElement('li');
     contact.textContent = 'Contact';
 
+       //cresting section1
+    /*const section1 = document.createElement('section');
+    section1.classList.add('section1');
+    const h2 = document.createElement('h2');
+    h2.textContent = 'Give us a shout!';
+    const p =document.createElement('p');
+    p.textContent = "Where you'll find us";
+    document.write('br')*/
+
     //Creating a contact form
-    const contactForm = document.createElement('div')
+    const contactForm = document.createElement('form');
+    const form = document.createElement('form');
+    form.setAttribute("action","mailto:tonymahlangu59@gmail.com");
+    // form.href = 'mailto:tonymahlangu59@gmail.com'
     contactForm.classList.add('contactForm')
     const h1 = document.createElement('h1')
     h1.textContent = 'Contact us'
@@ -32,23 +44,24 @@ export const Contact = (() =>{
     label2.textContent = 'Email:'
     const input2 = document.createElement('input')
     
-    const txtb3 = document.createElement('div')
-    txtb3.classList.add('txtb3')
-    const label3 = document.createElement('label')
-    label3.classList.add('label3')
-    label3.textContent = 'Phone Number:'
-    const input3 = document.createElement('input')
+    const txtb3 = document.createElement('div');
+    txtb3.classList.add('txtb3');
+    const label3 = document.createElement('label');
+    label3.classList.add('label3');
+    label3.textContent = 'Phone Number:';
+    const input3 = document.createElement('input');
     
-    const txtb4 = document.createElement('div')
-    txtb4.classList.add('txtb4')
-    const label4 = document.createElement('label')
-    label4.classList.add('label4')
-    label4.textContent = 'Message:'
-    const textArea = document.createElement('textarea')
+    const txtb4 = document.createElement('div');
+    txtb4.classList.add('txtb4');
+    const label4 = document.createElement('label');
+    label4.classList.add('label4');
+    label4.textContent = 'Message:';
+    const textArea = document.createElement('textarea');
     
-    const btn = document.createElement('a')
-    btn.classList.add('btn')
-    btn.textContent = 'Send'
+    const btn = document.createElement('a');
+    btn.setAttribute("href","mailto:tonymahlangu59@gmail.com");
+    btn.classList.add('btn');
+    btn.textContent = 'Send';
 
     //adding footer
 const footer = document.createElement('footer');
@@ -83,6 +96,7 @@ menuBar.appendChild(home);
 menuBar.appendChild(contact);
 content.appendChild(menuBar);
 
+
     //Append contact form
     txtb1.appendChild(label1)
     txtb1.appendChild(input1)
@@ -99,6 +113,7 @@ content.appendChild(menuBar);
     contactForm.appendChild(txtb4)
     contactForm.appendChild(btn)
     banner2.appendChild(contactForm)
+    contactForm.appendChild(form)
     banner2.appendChild(content)
 
 // append icons
